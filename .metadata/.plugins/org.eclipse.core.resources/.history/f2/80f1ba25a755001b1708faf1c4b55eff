@@ -1,0 +1,27 @@
+package entities;
+
+public class Conta {
+	public static int numConta;
+	public static String nomeTitular;
+	public static double deposito = 0;
+	public static String simNaoDeposito;
+	public static double saldoConta;
+	
+	
+	public String result() {
+		String result = nomeTitular;
+		return result;
+	}
+
+	public static void setNumConta(int numConta) {
+		Conta.numConta = numConta;
+	}
+
+	public static double getSaldoConta() {
+		return saldoConta;
+	}
+
+	public static void setSaldoConta(double saldoConta) {
+		Conta.saldoConta = saldoConta;
+	}	
+}

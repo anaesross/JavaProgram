@@ -1,0 +1,11 @@
+package entities;
+
+import java.util.Scanner;
+
+public class Retangulo {
+	
+	Scanner sc = new Scanner(System.in);
+	
+	
+	sc.close();
+}

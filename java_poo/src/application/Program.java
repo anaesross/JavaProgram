@@ -1,0 +1,46 @@
+package application;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+import entities.Triangle;
+
+public class Program {
+
+	public static void main(String[] args) {
+
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		//double xA, xB, xC, yA, yB, yC;
+		Triangle x,y;
+		x = new Triangle();
+		y = new Triangle();
+		
+		System.out.println("Entre com as 3 medidadas do triângulo X: ");
+		x.a = sc.nextDouble();
+		x.b = sc.nextDouble();
+		x.c = sc.nextDouble();
+		System.out.println("Entre com as 3 medidas do triêngulo Y: ");
+		y.a = sc.nextDouble();
+		y.b = sc.nextDouble();
+		y.c = sc.nextDouble();
+		
+		double areaX = x.area(); //chamando método da classe triângulo para o objeto x
+		
+		double areaY = y.area();
+		
+		
+		System.out.printf("Área do triêngulo X: %.4f\n" , areaX);
+		System.out.printf("Área do triêngulo Y: %.4f\n" , areaY);
+		
+		if( areaX > areaY) {
+			System.out.println("Maior área é o X");
+		} else {
+			System.out.println("Maior área é o Y");
+		}
+		
+		sc.close();
+	}
+
+}

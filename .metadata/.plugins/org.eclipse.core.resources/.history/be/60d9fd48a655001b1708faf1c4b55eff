@@ -1,0 +1,44 @@
+package entities;
+
+public class Conta {
+	public int numConta;
+	public String nomeTitular;
+	public double deposito = 0;
+	public String simNaoDeposito;
+	public static double saldoConta;
+	
+	
+	public String result() {
+		String result = nomeTitular;
+		return result;
+	}
+	
+	public int getNumConta() {
+		return numConta;
+	}
+
+	public void setNumConta(int numConta) {
+		this.numConta = numConta;
+	}
+
+	public static double getSaldoConta() {
+		return saldoConta;
+	}
+
+	public static void setSaldoConta(double saldoConta) {
+		Conta.saldoConta = saldoConta;
+	}
+	
+	public String comDeposito(numConta, nomeTitular) {
+		String comDeposito = "Detalhes Conta: \n Número Conta: " + numConta + "\nTitular Conta: " + nomeTitular;
+		return comDeposito;
+	}
+	
+	public String comDeposito(numConta, nomeTitular, saldoConta) {
+		String comDeposito = "Detalhes Conta: \n Número Conta: " + numConta + "\nTitular Conta: " + nomeTitular + "Saldo Conta: " + saldoConta;
+		return comDeposito;
+	}
+	
+	
+	
+}

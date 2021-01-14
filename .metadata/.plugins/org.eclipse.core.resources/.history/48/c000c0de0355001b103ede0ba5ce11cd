@@ -1,0 +1,15 @@
+package util;
+
+public class Cambio {
+
+	public static final double cambio = 0.06;
+	public double dollar;
+	public double montante;
+	
+	public static double valor() {
+		
+		double valorFinal = dollar * montante * cambio;
+		return valorFinal;
+	}
+	
+}

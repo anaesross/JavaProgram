@@ -1,0 +1,16 @@
+package entities;
+
+public class Conta {
+	private  int numConta;
+	private  String nomeTitular;
+	private  double saldoConta;
+	
+	
+	public Conta(int numConta, String nomeTitular, double saldoConta) {
+		this.numConta = numConta;
+		this.nomeTitular = nomeTitular;
+		this.saldoConta = saldoConta;
+	}
+	
+	
+}

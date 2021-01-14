@@ -1,0 +1,32 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+import entities.Conta;
+
+public class Program {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		Conta conta = new Conta();
+		
+		System.out.println("Digite o número da conta: ");
+		conta.numConta = sc.nextInt();
+		
+		System.out.println("Digite o nome do titular: ");
+		conta.nomeTitular = sc.next();
+		
+		System.out.println("Gostaria de fazer um depósito inicial? (s/n)");
+		conta.simNaoDeposito = (String) sc.next();
+		
+		if(conta.simNaoDeposito == "s") {
+			System.out.println("Detalhes Conta: \n Número Conta: " + conta.numConta + "\nTitular Conta: " + conta.nomeTitular + "Saldo Conta: " + Conta.getSaldoConta());
+		}
+		
+		
+		sc.close();
+
+	}
+
+}

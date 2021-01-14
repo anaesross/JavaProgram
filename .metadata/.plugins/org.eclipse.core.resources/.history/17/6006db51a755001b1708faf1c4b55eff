@@ -1,0 +1,9 @@
+package entities;
+
+public class Conta {
+	private  int numConta;
+	private  String nomeTitular;
+	private  double saldoConta;
+	
+	
+}

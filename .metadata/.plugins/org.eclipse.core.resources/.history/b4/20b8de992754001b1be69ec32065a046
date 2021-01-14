@@ -1,0 +1,20 @@
+package application;
+
+import java.util.Locale;
+
+public class Program {
+
+	public static void main(String[] args) {
+
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		double xA, xB, xC;
+		double yA, yB, yC;
+		
+		System.out.println("Entre as 3 medidadas do triângulo: ");
+		
+		sc.close();
+	}
+
+}

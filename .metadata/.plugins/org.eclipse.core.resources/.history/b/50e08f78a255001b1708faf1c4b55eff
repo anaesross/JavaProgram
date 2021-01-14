@@ -1,0 +1,18 @@
+package entities;
+
+public class Conta {
+	public int numConta;
+	public String nomeTitular;
+	public double deposito = 0;
+	public static double saldoConta;
+	
+	
+	public String result() {
+		String result = nomeTitular;
+		return result;
+	}
+	
+	public void getNumConta(int numConta) {
+		this.numConta = numConta;
+	}
+}

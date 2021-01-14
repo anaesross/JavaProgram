@@ -1,0 +1,38 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+import entities.Conta;
+
+public class Program {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		Conta conta;
+		
+		System.out.println("Digite o número da conta: ");
+		int numConta = sc.nextInt();
+		
+		System.out.println("Digite o nome do titular: ");
+		sc.nextLine();
+		String nomeTitular = sc.nextLine();
+		
+		System.out.println("Gostaria de fazer um depósito inicial? (s/n)");
+		char resposta = sc.next().charAt(0);
+		
+		if(resposta == 's') {
+			System.out.println("Entre com o valor inicial: ");
+			double depositoInicial = sc.nextDouble();
+			conta = new Conta(int numConta, String nomeTitular, double depositoInicial);
+		} else {
+			conta = new Conta(int numConta, String nomeTitular);
+		}
+				
+		
+		
+		sc.close();
+
+	}
+
+}

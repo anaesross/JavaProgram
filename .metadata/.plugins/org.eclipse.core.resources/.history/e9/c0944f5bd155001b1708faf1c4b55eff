@@ -1,0 +1,35 @@
+package application;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Program {
+
+	public static void main(String[] args) {
+		//precisa instanciar a lista para ser utilizada.
+		List<String> list = new ArrayList<>() ; //nao utilizar tipos primitivos para lista int , usar  wrapper Integer
+
+		list.add("Maria"); //adicionar elementos a lista
+		list.add("Alex");
+		list.add("Bob");
+		list.add("Anna");
+		
+		list.add(2 , "Marco");//inserir elemento em uma posição específica
+		
+		int tamanho = list.size();//verificar o tamanho da lista
+		System.out.println(tamanho);
+		
+		for(String valor : list) {
+			System.out.println(valor);
+		}
+		list.remove("Anna");//remover um elemento da lista - comparação de valor
+		list.remove(1);	//remover pela posição da lista.
+		System.out.println("---------------------");
+		//remover utilizando um predicado
+		//remover de todo string valor , tal que contenha valor M
+		//retorna verdadeiro ou falso para valores que contenham o valor M na string
+		//remove valores...
+		list.removeIf(valor -> valor.charAt(0) == 'M');
+	}
+
+}

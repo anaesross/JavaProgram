@@ -1,0 +1,9 @@
+package entities;
+
+public class Retangulo {
+	
+	Scanner sc = new Scanner(System.in);
+	
+	
+	sc.close();
+}

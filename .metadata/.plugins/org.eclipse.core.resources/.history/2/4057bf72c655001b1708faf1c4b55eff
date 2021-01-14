@@ -1,0 +1,37 @@
+package application;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Program {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		int qtdAlunos=-1;
+		String[] locacao = new String[qtdAlunos];
+		
+		
+		System.out.println("Quantos quartos serão alugados:");;
+		qtdAlunos = sc.nextInt();
+		
+		for (int i = 0; i < qtdAlunos; i++) {
+		
+			System.out.println("Nome estudante: ");
+			locacao[i] = sc.next();
+			
+			System.out.println("Email estudante: ");
+			locacao[i] += sc.next();
+		
+		}
+		
+		for (int i = 0; i < qtdAlunos; i++) {
+			System.out.println( i + ":" + locacao[i]);
+		}
+		
+		sc.close();
+
+	}
+
+}

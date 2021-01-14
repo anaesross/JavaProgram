@@ -1,0 +1,10 @@
+package util;
+
+public class Calcular {
+	public static final double PI = 3.14159; //valor constante ele nao pode ser alterado
+	//padrão de nome java para constantes é maiúsculo
+	
+	double c = circunferencia(raio);
+	
+	double v = volume(raio);
+}

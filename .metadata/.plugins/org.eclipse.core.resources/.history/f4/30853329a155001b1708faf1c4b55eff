@@ -1,0 +1,13 @@
+package entities;
+
+public class Conta {
+	public int numConta;
+	public String nomeTitular;
+	public double deposito = 0;
+	
+	
+	public String result() {
+		String result = nomeTitular;
+		return result;
+	}
+}
